@@ -295,6 +295,151 @@
   </style>
 
 <style>
+/* CYA featured photo gallery styles */
+.cya-photo-section {
+  padding: 72px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(0, 159, 197, 0.10), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+}
+
+.cya-photo-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.cya-photo-eyebrow {
+  color: #008fc7;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.cya-photo-title {
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.1;
+  color: #009b63;
+  margin: 0 0 14px;
+}
+
+.cya-photo-intro {
+  max-width: 880px;
+  color: #315466;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 34px;
+}
+
+.cya-photo-category {
+  margin-top: 42px;
+}
+
+.cya-photo-category:first-of-type {
+  margin-top: 0;
+}
+
+.cya-photo-category h3 {
+  color: #008fc7;
+  font-size: 1.45rem;
+  margin: 0 0 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cya-photo-category h3::before {
+  content: "";
+  width: 10px;
+  height: 28px;
+  border-radius: 999px;
+  background: #009b63;
+  display: inline-block;
+}
+
+.cya-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.cya-photo-tile {
+  grid-column: span 4;
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 220px;
+  background: #e8f6fb;
+  box-shadow: 0 14px 30px rgba(0, 90, 130, 0.12);
+  border: 1px solid rgba(0, 143, 199, 0.18);
+}
+
+.cya-photo-tile.large {
+  grid-column: span 6;
+  min-height: 280px;
+}
+
+.cya-photo-tile.wide {
+  grid-column: span 8;
+  min-height: 260px;
+}
+
+.cya-photo-tile a {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cya-photo-tile img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 260ms ease;
+}
+
+.cya-photo-tile:hover img {
+  transform: scale(1.045);
+}
+
+.cya-photo-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 42px 18px 16px;
+  color: #ffffff;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 43, 64, 0.88) 100%);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 900px) {
+  .cya-photo-tile,
+  .cya-photo-tile.large,
+  .cya-photo-tile.wide {
+    grid-column: span 6;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cya-photo-section {
+    padding: 50px 16px;
+  }
+
+  .cya-photo-tile,
+  .cya-photo-tile.large,
+  .cya-photo-tile.wide {
+    grid-column: span 12;
+    min-height: 220px;
+  }
+}
+
 /* CYA brochure/gallery styles */
 .cya-brochure-section {
   padding: 64px 20px;
@@ -833,6 +978,193 @@
     });
   });
 </script>
+
+<!-- CYA featured photo gallery section -->
+<section class="cya-photo-section" id="photos">
+  <div class="cya-photo-wrap">
+    <div class="cya-photo-eyebrow">CYA Photo Gallery</div>
+    <h2 class="cya-photo-title">Moments from Our Community Service</h2>
+    <p class="cya-photo-intro">
+      A cleaner photo gallery featuring selected moments from CYA programmes:
+      education support, donor contributions, prize distribution, uniforms and books,
+      health initiatives, cultural activities and flood relief.
+    </p>
+
+    <div class="cya-photo-category">
+      <h3>Education & Donor Support</h3>
+      <div class="cya-photo-grid">
+        <div class="cya-photo-tile large">
+          <a href="assets/photos/education-donor-portrait.png" target="_blank" rel="noopener">
+            <img src="assets/photos/education-donor-portrait.png" alt="Education support donor">
+            <div class="cya-photo-caption">Education Support</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/donor-portrait.png" target="_blank" rel="noopener">
+            <img src="assets/photos/donor-portrait.png" alt="CYA donor portrait">
+            <div class="cya-photo-caption">Donor Recognition</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/school-benches.png" target="_blank" rel="noopener">
+            <img src="assets/photos/school-benches.png" alt="School benches donated through CYA">
+            <div class="cya-photo-caption">School Bench Contribution</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cya-photo-category">
+      <h3>Prize Distribution</h3>
+      <div class="cya-photo-grid">
+        <div class="cya-photo-tile">
+          <a href="assets/photos/prize-distribution-01.png" target="_blank" rel="noopener">
+            <img src="assets/photos/prize-distribution-01.png" alt="Prize distribution event photo 1">
+            <div class="cya-photo-caption">Prize Distribution</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/prize-distribution-02.png" target="_blank" rel="noopener">
+            <img src="assets/photos/prize-distribution-02.png" alt="Prize distribution event photo 2">
+            <div class="cya-photo-caption">Student Recognition</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/prize-distribution-03.png" target="_blank" rel="noopener">
+            <img src="assets/photos/prize-distribution-03.png" alt="Prize distribution event photo 3">
+            <div class="cya-photo-caption">Honouring Achievers</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/prize-distribution-04.png" target="_blank" rel="noopener">
+            <img src="assets/photos/prize-distribution-04.png" alt="Prize distribution event photo 4">
+            <div class="cya-photo-caption">Community Event</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cya-photo-category">
+      <h3>Health, Cleanliness, Uniforms & Books</h3>
+      <div class="cya-photo-grid">
+        <div class="cya-photo-tile">
+          <a href="assets/photos/uniform-books-01.png" target="_blank" rel="noopener">
+            <img src="assets/photos/uniform-books-01.png" alt="Uniform and book distribution photo 1">
+            <div class="cya-photo-caption">Uniforms & Books</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/uniform-books-02.png" target="_blank" rel="noopener">
+            <img src="assets/photos/uniform-books-02.png" alt="Uniform and book distribution photo 2">
+            <div class="cya-photo-caption">Student Support</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/health-cleanliness-01.png" target="_blank" rel="noopener">
+            <img src="assets/photos/health-cleanliness-01.png" alt="Health activity photo">
+            <div class="cya-photo-caption">Health Initiative</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/health-cleanliness-02.png" target="_blank" rel="noopener">
+            <img src="assets/photos/health-cleanliness-02.png" alt="Cleanliness activity photo">
+            <div class="cya-photo-caption">Cleanliness Drive</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile large">
+          <a href="assets/photos/ayushman-card-01.png" target="_blank" rel="noopener">
+            <img src="assets/photos/ayushman-card-01.png" alt="Ayushman health card distribution photo 1">
+            <div class="cya-photo-caption">Ayushman Health Card Drive</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile large">
+          <a href="assets/photos/ayushman-card-02.png" target="_blank" rel="noopener">
+            <img src="assets/photos/ayushman-card-02.png" alt="Ayushman health card distribution photo 2">
+            <div class="cya-photo-caption">Public Health Support</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cya-photo-category">
+      <h3>Cultural & Community Activities</h3>
+      <div class="cya-photo-grid">
+        <div class="cya-photo-tile">
+          <a href="assets/photos/cultural-activity-01.png" target="_blank" rel="noopener">
+            <img src="assets/photos/cultural-activity-01.png" alt="Cultural activity photo 1">
+            <div class="cya-photo-caption">Senior Citizen Honouring</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/cultural-activity-02.png" target="_blank" rel="noopener">
+            <img src="assets/photos/cultural-activity-02.png" alt="Cultural activity photo 2">
+            <div class="cya-photo-caption">Community Programme</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/cultural-activity-03.png" target="_blank" rel="noopener">
+            <img src="assets/photos/cultural-activity-03.png" alt="Cultural performance photo">
+            <div class="cya-photo-caption">Cultural Performance</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/cultural-activity-04.png" target="_blank" rel="noopener">
+            <img src="assets/photos/cultural-activity-04.png" alt="Music performance photo">
+            <div class="cya-photo-caption">Music & Arts</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile large">
+          <a href="assets/photos/community-games.png" target="_blank" rel="noopener">
+            <img src="assets/photos/community-games.png" alt="Community games photo">
+            <div class="cya-photo-caption">Community Games</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile large">
+          <a href="assets/photos/children-activity.png" target="_blank" rel="noopener">
+            <img src="assets/photos/children-activity.png" alt="Children activity photo">
+            <div class="cya-photo-caption">Children's Activities</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cya-photo-category">
+      <h3>Flood Relief</h3>
+      <div class="cya-photo-grid">
+        <div class="cya-photo-tile">
+          <a href="assets/photos/flood-relief-01.png" target="_blank" rel="noopener">
+            <img src="assets/photos/flood-relief-01.png" alt="Flood relief photo 1">
+            <div class="cya-photo-caption">Relief Team</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/flood-relief-02.png" target="_blank" rel="noopener">
+            <img src="assets/photos/flood-relief-02.png" alt="Flood relief photo 2">
+            <div class="cya-photo-caption">Relief Distribution</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile large">
+          <a href="assets/photos/flood-relief-03.png" target="_blank" rel="noopener">
+            <img src="assets/photos/flood-relief-03.png" alt="Flood relief transport photo">
+            <div class="cya-photo-caption">Relief Transport</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/flood-relief-04.png" target="_blank" rel="noopener">
+            <img src="assets/photos/flood-relief-04.png" alt="Flood affected community photo">
+            <div class="cya-photo-caption">Community Support</div>
+          </a>
+        </div>
+        <div class="cya-photo-tile">
+          <a href="assets/photos/flood-relief-05.png" target="_blank" rel="noopener">
+            <img src="assets/photos/flood-relief-05.png" alt="Flood relief gathering photo">
+            <div class="cya-photo-caption">Flood Relief Service</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- CYA brochure/gallery section -->
 <section class="cya-brochure-section" id="gallery">
