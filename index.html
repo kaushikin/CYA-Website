@@ -7,14 +7,14 @@
   <meta name="description" content="Challengers Youth Association (R) - A registered NGO in Bangalore dedicated to education, health, cleanliness, and community welfare since 2010."/>
   
   <!-- Canonical Link -->
-  <link rel="canonical" href="https://cyaindia.org" />
+  <link rel="canonical" href="https://www.challengersyouth.org" />
 
   <!-- Open Graph / Social Media Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Challengers Youth Association | NGO in Bangalore" />
   <meta property="og:description" content="Empowering youth, supporting education, and promoting community health in Bangalore since 2010." />
-  <meta property="og:url" content="https://cyaindia.org" />
-  <meta property="og:image" content="https://cyaindia.org/logo.png" />
+  <meta property="og:url" content="https://www.challengersyouth.org" />
+  <meta property="og:image" content="https://www.challengersyouth.org/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@
     "@type": "NGO",
     "name": "Challengers Youth Association",
     "alternateName": "CYA",
-    "url": "https://cyaindia.org",
-    "logo": "https://cyaindia.org/logo.png",
+    "url": "https://www.challengersyouth.org",
+    "logo": "https://www.challengersyouth.org/logo.png",
     "foundingDate": "2010-09-05",
     "description": "A registered NGO in Bangalore dedicated to education, health, cultural upliftment, and community welfare.",
     "address": {
@@ -98,7 +98,7 @@
     .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-    .grid-5 { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
+    .grid-5 { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 18px; }
 
     /* ── NAVBAR ── */
     #navbar {
@@ -221,11 +221,11 @@
     .ach-item p strong { color: var(--text-dk); }
 
     /* ── TEAM ── */
-    .team-card { background: #fff; border-radius: var(--radius); border: 1.5px solid var(--border); padding: 24px; text-align: center; box-shadow: var(--shadow); transition: transform .22s; }
+    .team-card { background: #fff; border-radius: var(--radius); border: 1.5px solid var(--border); padding: 20px 16px; text-align: center; box-shadow: var(--shadow); transition: transform .22s; }
     .team-card:hover { transform: translateY(-4px); }
-    .team-avatar { width: 70px; height: 70px; border-radius: 50%; background: var(--blue-lt); margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-family: 'Poppins',sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--blue); border: 3px solid var(--border); }
-    .team-card h3 { font-family: 'Poppins',sans-serif; font-size: .92rem; font-weight: 700; color: var(--text-dk); }
-    .team-card p { font-size: .78rem; color: var(--text-lt); margin-top: 4px; }
+    .team-avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--blue-lt); margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-family: 'Poppins',sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--blue); border: 3px solid var(--border); }
+    .team-card h3 { font-family: 'Poppins',sans-serif; font-size: .88rem; font-weight: 700; color: var(--text-dk); }
+    .team-card p { font-size: .75rem; color: var(--text-lt); margin-top: 3px; }
 
     /* ── CONTACT ── */
     .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
@@ -293,256 +293,6 @@
       .hero-stats-row { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
-
-<style>
-/* CYA featured photo gallery styles */
-.cya-photo-section {
-  padding: 72px 20px;
-  background:
-    radial-gradient(circle at top left, rgba(0, 159, 197, 0.10), transparent 32%),
-    linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
-}
-
-.cya-photo-wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.cya-photo-eyebrow {
-  color: #008fc7;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 8px;
-}
-
-.cya-photo-title {
-  font-size: clamp(2rem, 4vw, 3.15rem);
-  line-height: 1.1;
-  color: #009b63;
-  margin: 0 0 14px;
-}
-
-.cya-photo-intro {
-  max-width: 880px;
-  color: #315466;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 34px;
-}
-
-.cya-photo-category {
-  margin-top: 42px;
-}
-
-.cya-photo-category:first-of-type {
-  margin-top: 0;
-}
-
-.cya-photo-category h3 {
-  color: #008fc7;
-  font-size: 1.45rem;
-  margin: 0 0 18px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.cya-photo-category h3::before {
-  content: "";
-  width: 10px;
-  height: 28px;
-  border-radius: 999px;
-  background: #009b63;
-  display: inline-block;
-}
-
-.cya-photo-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 18px;
-}
-
-.cya-photo-tile {
-  grid-column: span 4;
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  min-height: 220px;
-  background: #e8f6fb;
-  box-shadow: 0 14px 30px rgba(0, 90, 130, 0.12);
-  border: 1px solid rgba(0, 143, 199, 0.18);
-}
-
-.cya-photo-tile.large {
-  grid-column: span 6;
-  min-height: 280px;
-}
-
-.cya-photo-tile.wide {
-  grid-column: span 8;
-  min-height: 260px;
-}
-
-.cya-photo-tile a {
-  display: block;
-  height: 100%;
-  color: inherit;
-  text-decoration: none;
-}
-
-.cya-photo-tile img {
-  width: 100%;
-  height: 100%;
-  min-height: inherit;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform 260ms ease;
-}
-
-.cya-photo-tile:hover img {
-  transform: scale(1.045);
-}
-
-.cya-photo-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 42px 18px 16px;
-  color: #ffffff;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 43, 64, 0.88) 100%);
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
-}
-
-@media (max-width: 900px) {
-  .cya-photo-tile,
-  .cya-photo-tile.large,
-  .cya-photo-tile.wide {
-    grid-column: span 6;
-    min-height: 220px;
-  }
-}
-
-@media (max-width: 640px) {
-  .cya-photo-section {
-    padding: 50px 16px;
-  }
-
-  .cya-photo-tile,
-  .cya-photo-tile.large,
-  .cya-photo-tile.wide {
-    grid-column: span 12;
-    min-height: 220px;
-  }
-}
-
-/* CYA brochure/gallery styles */
-.cya-brochure-section {
-  padding: 64px 20px;
-  background: #f5fbff;
-}
-
-.cya-brochure-wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.cya-brochure-eyebrow {
-  color: #008fc7;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 8px;
-}
-
-.cya-brochure-title {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 1.1;
-  color: #009b63;
-  margin: 0 0 14px;
-}
-
-.cya-brochure-intro {
-  max-width: 820px;
-  color: #315466;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-.cya-gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 22px;
-}
-
-.cya-gallery-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 143, 199, 0.18);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0, 90, 130, 0.10);
-  transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.cya-gallery-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 36px rgba(0, 90, 130, 0.16);
-}
-
-.cya-gallery-card a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
-
-.cya-gallery-card img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: top center;
-  display: block;
-  background: #e8f6fb;
-}
-
-.cya-gallery-card-body {
-  padding: 16px 18px 20px;
-}
-
-.cya-gallery-card h3 {
-  margin: 0 0 8px;
-  color: #008fc7;
-  font-size: 1.15rem;
-}
-
-.cya-gallery-card p {
-  margin: 0;
-  color: #4d6470;
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-
-.cya-brochure-note {
-  margin-top: 28px;
-  color: #315466;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 640px) {
-  .cya-brochure-section {
-    padding: 44px 16px;
-  }
-
-  .cya-gallery-card img {
-    height: 260px;
-  }
-}
-</style>
-
 </head>
 <body>
 
@@ -617,7 +367,7 @@
           <div class="hero-stats-row">
             <div class="hero-stat"><div class="num">2010</div><div class="lbl">Established</div></div>
             <div class="hero-stat"><div class="num">500+</div><div class="lbl">Ayushman Cards</div></div>
-            <div class="hero-stat"><div class="num">15+</div><div class="lbl">Active Members</div></div>
+            <div class="hero-stat"><div class="num">25+</div><div class="lbl">Active Members</div></div>
           </div>
         </div>
         <div class="hero-float hero-float-1"><i class="fas fa-graduation-cap" style="color:var(--blue)"></i> Education Support</div>
@@ -633,7 +383,7 @@
     <div class="impact-grid">
       <div class="impact-item"><div class="impact-num">500<span class="impact-plus">+</span></div><div class="impact-label">Ayushman Cards Distributed</div></div>
       <div class="impact-item"><div class="impact-num">100<span class="impact-plus">+</span></div><div class="impact-label">Students Supported</div></div>
-      <div class="impact-item"><div class="impact-num">15<span class="impact-plus">+</span></div><div class="impact-label">Active Members</div></div>
+      <div class="impact-item"><div class="impact-num">25<span class="impact-plus">+</span></div><div class="impact-label">Active Members</div></div>
       <div class="impact-item"><div class="impact-num">2010</div><div class="impact-label">Year Established</div></div>
     </div>
   </div>
@@ -806,11 +556,20 @@
     <div class="center" style="margin-bottom:40px">
       <span class="section-tag">Our People</span>
       <h2 class="section-title">Active Members of CYA</h2>
+      <p class="section-sub" style="margin: 0 auto;">Core team and dedicated volunteers working for community welfare.</p>
     </div>
-    <div class="grid-5">
+
+    <!-- Core Team -->
+    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--blue);margin-bottom:20px;text-align:center;font-size:1.1rem;">Core Team</h3>
+    <div class="grid-5" style="margin-bottom:40px; max-width:700px; margin-left:auto; margin-right:auto;">
       <div class="team-card"><div class="team-avatar">PJ</div><h3>Prafulla Jorapur</h3><p>Founder President</p></div>
       <div class="team-card"><div class="team-avatar">MB</div><h3>Manoj B N</h3><p>President</p></div>
       <div class="team-card"><div class="team-avatar">GD</div><h3>Goutham D N</h3><p>Secretary</p></div>
+    </div>
+
+    <!-- Active Members -->
+    <h3 style="font-family:'Poppins',sans-serif;font-weight:700;color:var(--blue);margin-bottom:20px;text-align:center;font-size:1.1rem;">Active Members</h3>
+    <div class="grid-5">
       <div class="team-card"><div class="team-avatar">SR</div><h3>Shobha R</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">VD</div><h3>Varun M Deshpande</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">SV</div><h3>Shruthi Varun</h3><p>Active Member</p></div>
@@ -820,9 +579,22 @@
       <div class="team-card"><div class="team-avatar">LG</div><h3>Latha Gadakar</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">AD</div><h3>Aparna Desai</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">PD</div><h3>Padma Desai</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">DI</div><h3>Dinesh</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">GK</div><h3>Geetha Kulkarni</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">PS</div><h3>Pavan Siraguppi</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">CK</div><h3>Chaitra Kulkarni</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">T</div><h3>Tejaswini</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">RG</div><h3>Rashmi Guruprasad</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">A</div><h3>Asha</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">R</div><h3>Rukmini</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">N</div><h3>Nalini</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">S</div><h3>Srinivas</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">SD</div><h3>Sridevi</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">AN</div><h3>Annapoorna</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">RH</div><h3>Roopa Halisagar</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">SP</div><h3>Suma Patil</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">V</div><h3>Vivekananda</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">KV</div><h3>Kuber Varma</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">AB</div><h3>Abhiram</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar">SK</div><h3>Sinnur Kara</h3><p>Active Member</p></div>
     </div>
     <p style="text-align: center; margin-top: 30px; font-weight: 600; color: var(--text-md);">Major Donors: Sri C N Srinivasan & Smt. Srinivasan</p>
   </div>
@@ -892,7 +664,7 @@
           </div>
           <div class="contact-item">
             <div class="contact-item-icon"><i class="fas fa-globe"></i></div>
-            <div class="contact-item-text"><strong>Website</strong><span>cyaindia.org</span></div>
+            <div class="contact-item-text"><strong>Website</strong><span>www.challengersyouth.org</span></div>
           </div>
         </div>
       </div>
@@ -978,285 +750,6 @@
     });
   });
 </script>
-
-<!-- CYA featured photo gallery section -->
-<section class="cya-photo-section" id="photos">
-  <div class="cya-photo-wrap">
-    <div class="cya-photo-eyebrow">CYA Photo Gallery</div>
-    <h2 class="cya-photo-title">Moments from Our Community Service</h2>
-    <p class="cya-photo-intro">
-      A cleaner photo gallery featuring selected moments from CYA programmes:
-      education support, donor contributions, prize distribution, uniforms and books,
-      health initiatives, cultural activities and flood relief.
-    </p>
-
-    <div class="cya-photo-category">
-      <h3>Education & Donor Support</h3>
-      <div class="cya-photo-grid">
-        <div class="cya-photo-tile large">
-          <a href="assets/photos/education-donor-portrait.png" target="_blank" rel="noopener">
-            <img src="assets/photos/education-donor-portrait.png" alt="Education support donor">
-            <div class="cya-photo-caption">Education Support</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/donor-portrait.png" target="_blank" rel="noopener">
-            <img src="assets/photos/donor-portrait.png" alt="CYA donor portrait">
-            <div class="cya-photo-caption">Donor Recognition</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/school-benches.png" target="_blank" rel="noopener">
-            <img src="assets/photos/school-benches.png" alt="School benches donated through CYA">
-            <div class="cya-photo-caption">School Bench Contribution</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cya-photo-category">
-      <h3>Prize Distribution</h3>
-      <div class="cya-photo-grid">
-        <div class="cya-photo-tile">
-          <a href="assets/photos/prize-distribution-01.png" target="_blank" rel="noopener">
-            <img src="assets/photos/prize-distribution-01.png" alt="Prize distribution event photo 1">
-            <div class="cya-photo-caption">Prize Distribution</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/prize-distribution-02.png" target="_blank" rel="noopener">
-            <img src="assets/photos/prize-distribution-02.png" alt="Prize distribution event photo 2">
-            <div class="cya-photo-caption">Student Recognition</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/prize-distribution-03.png" target="_blank" rel="noopener">
-            <img src="assets/photos/prize-distribution-03.png" alt="Prize distribution event photo 3">
-            <div class="cya-photo-caption">Honouring Achievers</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/prize-distribution-04.png" target="_blank" rel="noopener">
-            <img src="assets/photos/prize-distribution-04.png" alt="Prize distribution event photo 4">
-            <div class="cya-photo-caption">Community Event</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cya-photo-category">
-      <h3>Health, Cleanliness, Uniforms & Books</h3>
-      <div class="cya-photo-grid">
-        <div class="cya-photo-tile">
-          <a href="assets/photos/uniform-books-01.png" target="_blank" rel="noopener">
-            <img src="assets/photos/uniform-books-01.png" alt="Uniform and book distribution photo 1">
-            <div class="cya-photo-caption">Uniforms & Books</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/uniform-books-02.png" target="_blank" rel="noopener">
-            <img src="assets/photos/uniform-books-02.png" alt="Uniform and book distribution photo 2">
-            <div class="cya-photo-caption">Student Support</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/health-cleanliness-01.png" target="_blank" rel="noopener">
-            <img src="assets/photos/health-cleanliness-01.png" alt="Health activity photo">
-            <div class="cya-photo-caption">Health Initiative</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/health-cleanliness-02.png" target="_blank" rel="noopener">
-            <img src="assets/photos/health-cleanliness-02.png" alt="Cleanliness activity photo">
-            <div class="cya-photo-caption">Cleanliness Drive</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile large">
-          <a href="assets/photos/ayushman-card-01.png" target="_blank" rel="noopener">
-            <img src="assets/photos/ayushman-card-01.png" alt="Ayushman health card distribution photo 1">
-            <div class="cya-photo-caption">Ayushman Health Card Drive</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile large">
-          <a href="assets/photos/ayushman-card-02.png" target="_blank" rel="noopener">
-            <img src="assets/photos/ayushman-card-02.png" alt="Ayushman health card distribution photo 2">
-            <div class="cya-photo-caption">Public Health Support</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cya-photo-category">
-      <h3>Cultural & Community Activities</h3>
-      <div class="cya-photo-grid">
-        <div class="cya-photo-tile">
-          <a href="assets/photos/cultural-activity-01.png" target="_blank" rel="noopener">
-            <img src="assets/photos/cultural-activity-01.png" alt="Cultural activity photo 1">
-            <div class="cya-photo-caption">Senior Citizen Honouring</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/cultural-activity-02.png" target="_blank" rel="noopener">
-            <img src="assets/photos/cultural-activity-02.png" alt="Cultural activity photo 2">
-            <div class="cya-photo-caption">Community Programme</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/cultural-activity-03.png" target="_blank" rel="noopener">
-            <img src="assets/photos/cultural-activity-03.png" alt="Cultural performance photo">
-            <div class="cya-photo-caption">Cultural Performance</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/cultural-activity-04.png" target="_blank" rel="noopener">
-            <img src="assets/photos/cultural-activity-04.png" alt="Music performance photo">
-            <div class="cya-photo-caption">Music & Arts</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile large">
-          <a href="assets/photos/community-games.png" target="_blank" rel="noopener">
-            <img src="assets/photos/community-games.png" alt="Community games photo">
-            <div class="cya-photo-caption">Community Games</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile large">
-          <a href="assets/photos/children-activity.png" target="_blank" rel="noopener">
-            <img src="assets/photos/children-activity.png" alt="Children activity photo">
-            <div class="cya-photo-caption">Children's Activities</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="cya-photo-category">
-      <h3>Flood Relief</h3>
-      <div class="cya-photo-grid">
-        <div class="cya-photo-tile">
-          <a href="assets/photos/flood-relief-01.png" target="_blank" rel="noopener">
-            <img src="assets/photos/flood-relief-01.png" alt="Flood relief photo 1">
-            <div class="cya-photo-caption">Relief Team</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/flood-relief-02.png" target="_blank" rel="noopener">
-            <img src="assets/photos/flood-relief-02.png" alt="Flood relief photo 2">
-            <div class="cya-photo-caption">Relief Distribution</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile large">
-          <a href="assets/photos/flood-relief-03.png" target="_blank" rel="noopener">
-            <img src="assets/photos/flood-relief-03.png" alt="Flood relief transport photo">
-            <div class="cya-photo-caption">Relief Transport</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/flood-relief-04.png" target="_blank" rel="noopener">
-            <img src="assets/photos/flood-relief-04.png" alt="Flood affected community photo">
-            <div class="cya-photo-caption">Community Support</div>
-          </a>
-        </div>
-        <div class="cya-photo-tile">
-          <a href="assets/photos/flood-relief-05.png" target="_blank" rel="noopener">
-            <img src="assets/photos/flood-relief-05.png" alt="Flood relief gathering photo">
-            <div class="cya-photo-caption">Flood Relief Service</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CYA brochure/gallery section -->
-<section class="cya-brochure-section" id="gallery">
-  <div class="cya-brochure-wrap">
-    <div class="cya-brochure-eyebrow">CYA Brochure & Photo Gallery</div>
-    <h2 class="cya-brochure-title">Our Activities in Pictures</h2>
-    <p class="cya-brochure-intro">
-      A visual overview of Challengers’ Youth Association activities including education support,
-      health and cleanliness drives, cultural programmes, donor contributions, senior citizen
-      honouring and flood relief service.
-    </p>
-
-    <div class="cya-gallery-grid">
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-01.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-01.png" alt="CYA Introduction">
-            <div class="cya-gallery-card-body">
-              <h3>CYA Introduction</h3>
-              <p>Registration details, logo, address and contact information.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-02.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-02.png" alt="Association Overview">
-            <div class="cya-gallery-card-body">
-              <h3>Association Overview</h3>
-              <p>Education, health, cleanliness, senior citizen honouring, cultural activities and youth power.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-03.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-03.png" alt="Mission, Vision & Donors">
-            <div class="cya-gallery-card-body">
-              <h3>Mission, Vision & Donors</h3>
-              <p>Mission and vision of Challengers’ Youth Association with major donor recognition.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-04.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-04.png" alt="Activities & Education Support">
-            <div class="cya-gallery-card-body">
-              <h3>Activities & Education Support</h3>
-              <p>Scholarships, uniforms, laptops, cleaning drives, health camps and education support.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-05.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-05.png" alt="Donors & Prize Distribution">
-            <div class="cya-gallery-card-body">
-              <h3>Donors & Prize Distribution</h3>
-              <p>Donor contribution and prize distribution moments from CYA programmes.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-06.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-06.png" alt="Uniforms, Books & Health Cards">
-            <div class="cya-gallery-card-body">
-              <h3>Uniforms, Books & Health Cards</h3>
-              <p>Uniform and book distribution, health and cleanliness activities, and Ayushman health card drive.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-07.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-07.png" alt="Cultural Activities">
-            <div class="cya-gallery-card-body">
-              <h3>Cultural Activities</h3>
-              <p>Senior citizen honouring and cultural activity photographs.</p>
-            </div>
-          </a>
-        </article>
-        <article class="cya-gallery-card">
-          <a href="assets/brochure/cya-brochure-page-08.png" target="_blank" rel="noopener">
-            <img src="assets/brochure/cya-brochure-page-08.png" alt="Flood Relief">
-            <div class="cya-gallery-card-body">
-              <h3>Flood Relief</h3>
-              <p>Flood relief support activities and community service photographs.</p>
-            </div>
-          </a>
-        </article>
-    </div>
-
-    <p class="cya-brochure-note">
-      Click any image to view the full brochure page.
-    </p>
-  </div>
-</section>
 
 </body>
 </html>
