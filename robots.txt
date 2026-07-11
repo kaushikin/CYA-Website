@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cyaindia.org/sitemap.xml
+Sitemap: https://www.challengersyouth.org/sitemap.xml
