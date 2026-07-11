@@ -1,0 +1,6 @@
+Put these photos here:
+
+- hero-main.jpg         → Best team/group action photo (wide)
+- about-us.jpg          → Nice office / meeting / event photo
+- founder-president.jpg → Photo of Prafulla Jorapur
+- office-building.jpg   → Exterior of office (optional)

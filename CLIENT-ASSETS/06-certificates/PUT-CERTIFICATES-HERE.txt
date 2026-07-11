@@ -1,0 +1,5 @@
+Put these documents here:
+
+- registration-certificate.pdf  (or .jpg)
+- 80g-certificate.pdf           (or .jpg)
+- pan-card.jpg                  (optional)

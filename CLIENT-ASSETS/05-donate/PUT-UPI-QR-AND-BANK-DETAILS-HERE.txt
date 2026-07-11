@@ -1,0 +1,11 @@
+1. Put the UPI QR code image here as:
+   upi-qr-code.png
+
+2. Create a file called bank-details.txt and fill:
+
+Bank Name          : 
+Account Name       : Challengers Youth Association
+Account Number     : 
+IFSC Code          : 
+Branch             : 
+UPI ID             : cyabengaluru@upi

@@ -1,0 +1,5 @@
+Put the following files here:
+
+- cya-logo.png          (main logo – transparent PNG preferred)
+- cya-logo-white.png    (white version for dark backgrounds)
+- favicon.png           (small square icon)

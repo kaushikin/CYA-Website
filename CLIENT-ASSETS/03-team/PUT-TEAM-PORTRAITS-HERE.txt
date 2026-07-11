@@ -1,0 +1,20 @@
+Put one clear portrait photo for each member.
+
+Recommended file names:
+- prafulla-jorapur.jpg
+- manoj-bn.jpg
+- goutham-dn.jpg
+- shobha-r.jpg
+- varun-m-deshpande.jpg
+- shruthi-varun.jpg
+- sasi-gautham.jpg
+- bhargav-mr.jpg
+- srinidhi-gudi.jpg
+- latha-gadakar.jpg
+- aparna-desai.jpg
+- padma-desai.jpg
+- dinesh.jpg
+- geetha-kulkarni.jpg
+- pavan-siraguppi.jpg
+
+(If new members, just use full-name.jpg)
