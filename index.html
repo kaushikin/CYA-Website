@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,12 @@
   <meta property="og:title" content="Challengers Youth Association | NGO in Bangalore" />
   <meta property="og:description" content="Empowering youth, supporting education, and promoting community health in Bangalore since 2010." />
   <meta property="og:url" content="https://www.challengersyouth.org" />
-  <meta property="og:image" content="https://www.challengersyouth.org/logo.png" />
+  <meta property="og:image" content="https://www.challengersyouth.org/CLIENT-ASSETS/01-logo/cya-logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/CLIENT-ASSETS/01-logo/favicon.png?v=3">
+  <link rel="apple-touch-icon" href="/CLIENT-ASSETS/01-logo/favicon.png?v=3">
+  <meta name="theme-color" content="#1A6BB5">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +35,7 @@
     "name": "Challengers Youth Association",
     "alternateName": "CYA",
     "url": "https://www.challengersyouth.org",
-    "logo": "https://www.challengersyouth.org/logo.png",
+    "logo": "https://www.challengersyouth.org/CLIENT-ASSETS/01-logo/cya-logo.png",
     "foundingDate": "2010-09-05",
     "description": "A registered NGO in Bangalore dedicated to education, health, cultural upliftment, and community welfare.",
     "address": {
@@ -70,6 +76,7 @@
       --radius:   14px;
       --radius-sm:8px;
     }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text-dk); line-height: 1.65; }
@@ -107,13 +114,43 @@
       border-bottom: 1.5px solid var(--border);
       padding: 12px 0; transition: box-shadow .3s;
     }
+
     #navbar.scrolled { box-shadow: 0 4px 20px rgba(26,107,181,.12); }
+
     .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { display: flex; align-items: center; gap: 12px; }
-    .nav-logo-icon { width: 44px; height: 44px; background: var(--blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.3rem; font-weight: 800; font-family: 'Poppins',sans-serif; flex-shrink: 0; }
+
+    .nav-logo { 
+      display: flex; 
+      align-items: center; 
+      gap: 12px; 
+      min-width: 0;
+    }
+
+    .nav-logo-img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 50%;
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 5px rgba(26,107,181,.18));
+    }
+
+    .nav-logo-text {
+      min-width: 0;
+    }
+
     .nav-logo-text span { display: block; }
-    .nav-logo-text .name { font-family: 'Poppins',sans-serif; font-size: .95rem; font-weight: 800; color: var(--text-dk); line-height: 1.1; }
+
+    .nav-logo-text .name { 
+      font-family: 'Poppins',sans-serif; 
+      font-size: .95rem; 
+      font-weight: 800; 
+      color: var(--text-dk); 
+      line-height: 1.1; 
+    }
+
     .nav-logo-text .sub { font-size: .72rem; color: var(--text-lt); }
+
     .nav-links { display: flex; align-items: center; gap: 6px; list-style: none; }
     .nav-links a { font-family: 'Poppins',sans-serif; font-size: .82rem; font-weight: 600; color: var(--text-md); padding: 6px 10px; border-radius: 8px; transition: all .2s; }
     .nav-links a:hover, .nav-links a.active { color: var(--blue); background: var(--blue-lt); }
@@ -130,6 +167,7 @@
       background: linear-gradient(135deg, #EEF5FF 0%, #F7FAFF 55%, #E9F9F2 100%);
       padding-top: 80px; position: relative; overflow: hidden;
     }
+
     .hero-blob { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .35; pointer-events: none; }
     .hero-blob-1 { width: 500px; height: 500px; background: #B3D4FF; top: -100px; right: -100px; }
     .hero-blob-2 { width: 300px; height: 300px; background: #B2EECF; bottom: -80px; left: -80px; }
@@ -146,7 +184,16 @@
     .hero-badge i { color: var(--blue); }
     .hero-visual { position: relative; }
     .hero-card-main { background: #fff; border-radius: 20px; padding: 32px; box-shadow: 0 16px 60px rgba(26,107,181,.16); border: 1.5px solid var(--border); text-align: center; }
-    .hero-logo-circle { width: 100px; height: 100px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; color: #fff; font-family: 'Poppins',sans-serif; font-size: 2rem; font-weight: 800; }
+
+    .hero-logo-img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 50%;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 6px 16px rgba(26,107,181,.18));
+    }
+
     .hero-card-title { font-family: 'Poppins',sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--text-dk); margin-bottom: 6px; }
     .hero-card-sub { font-size: .82rem; color: var(--text-lt); margin-bottom: 20px; }
     .hero-stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
@@ -258,9 +305,28 @@
     footer { background: var(--text-dk); color: rgba(255,255,255,.8); padding: 60px 0 0; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 40px; }
     .footer-brand p { font-size: .88rem; line-height: 1.65; margin: 14px 0 18px; }
-    .footer-logo { display: flex; align-items: center; gap: 10px; }
-    .footer-logo-icon { width: 40px; height: 40px; background: var(--blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 800; font-family: 'Poppins',sans-serif; }
-    .footer-logo-name { font-family: 'Poppins',sans-serif; font-size: .95rem; font-weight: 800; color: #fff; }
+
+    .footer-logo { 
+      display: flex; 
+      align-items: center; 
+      gap: 12px; 
+    }
+
+    .footer-logo-img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .footer-logo-name { 
+      font-family: 'Poppins',sans-serif; 
+      font-size: .95rem; 
+      font-weight: 800; 
+      color: #fff; 
+    }
+
     .footer-col h4 { font-family: 'Poppins',sans-serif; font-size: .85rem; font-weight: 700; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: .08em; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .footer-col ul li a { font-size: .84rem; color: rgba(255,255,255,.65); transition: color .2s; }
@@ -283,6 +349,7 @@
       .about-pill { right: 12px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
+
     @media (max-width: 600px) {
       .section { padding: 56px 0; }
       .nav-links, .nav-cta { display: none; }
@@ -291,6 +358,67 @@
       .footer-grid { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; text-align: center; }
       .hero-stats-row { grid-template-columns: repeat(3, 1fr); }
+
+      .nav-logo-img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .nav-logo-text .name {
+        font-size: .82rem;
+      }
+
+      .nav-logo-text .sub {
+        font-size: .65rem;
+      }
+
+      .hero-logo-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .footer-logo-img {
+        width: 46px;
+        height: 46px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .container { padding: 0 18px; }
+
+      .nav-logo {
+        gap: 9px;
+      }
+
+      .nav-logo-img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-logo-text .name {
+        font-size: .78rem;
+        line-height: 1.15;
+      }
+
+      .nav-logo-text .sub {
+        display: none;
+      }
+
+      .hero-card-main {
+        padding: 26px 18px;
+      }
+
+      .hero-stats-row {
+        gap: 8px;
+      }
+
+      .hero-stat .num {
+        font-size: 1.15rem;
+      }
+
+      .hero-stat .lbl {
+        font-size: .65rem;
+      }
     }
   </style>
 </head>
@@ -300,13 +428,20 @@
 <nav id="navbar">
   <div class="container">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo">
-        <div class="nav-logo-icon">CYA</div>
+      <a href="#home" class="nav-logo" aria-label="Challengers Youth Association Home">
+        <img 
+          src="/CLIENT-ASSETS/01-logo/cya-logo.png?v=3" 
+          alt="Challengers Youth Association logo" 
+          class="nav-logo-img"
+          width="48"
+          height="48"
+        >
         <div class="nav-logo-text">
           <span class="name">Challengers Youth Association</span>
           <span class="sub">Reg No: 18/17-18 | Bangalore</span>
         </div>
       </a>
+
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -316,9 +451,11 @@
         <li><a href="#donate">Donate</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
       <a href="#donate" class="btn btn-orange nav-cta">Donate Now</a>
       <button class="nav-hamburger" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
     </div>
+
     <div class="nav-mobile" id="navMobile">
       <a href="#home" onclick="closeNav()">Home</a>
       <a href="#about" onclick="closeNav()">About</a>
@@ -358,9 +495,16 @@
           <span class="hero-badge"><i class="fas fa-users"></i> Community Driven</span>
         </div>
       </div>
+
       <div class="hero-visual">
         <div class="hero-card-main">
-          <div class="hero-logo-circle">CYA</div>
+          <img 
+            src="/CLIENT-ASSETS/01-logo/cya-logo.png?v=3" 
+            alt="Challengers Youth Association logo" 
+            class="hero-logo-img"
+            width="120"
+            height="120"
+          >
           <div class="hero-card-title">Challengers Youth Association(R)</div>
           <div class="hero-card-sub">ಚಾಲೆಂಜರ್ಸ್ ಯೂತ್ ಅಸೋಸಿಯೇಷನ್(ರಿ)</div>
           <p style="font-size:.82rem;color:var(--text-lt);margin-bottom:12px;">149/A, 29th Cross, 2nd Block, Rajajinagar, Bangalore – 560010</p>
@@ -686,7 +830,13 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">
-          <div class="footer-logo-icon">CYA</div>
+          <img 
+            src="/CLIENT-ASSETS/01-logo/cya-logo-white.png?v=3" 
+            alt="Challengers Youth Association logo" 
+            class="footer-logo-img"
+            width="52"
+            height="52"
+          >
           <span class="footer-logo-name">Challengers Youth Association(R)</span>
         </div>
         <p>A registered NGO in Bangalore committed to education, health, and community welfare since September 5, 2010. Guided by the vision of Vasudhaiva Kutumbakam — the world is one family.</p>
@@ -734,17 +884,21 @@
   document.getElementById('navToggle').addEventListener('click', () => {
     document.getElementById('navMobile').classList.toggle('open');
   });
+
   function closeNav() {
     document.getElementById('navMobile').classList.remove('open');
   }
 
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
+
   window.addEventListener('scroll', () => {
     let current = '';
+
     sections.forEach(s => {
       if (window.scrollY >= s.offsetTop - 100) current = s.id;
     });
+
     navLinks.forEach(a => {
       a.classList.toggle('active', a.getAttribute('href') === '#' + current);
     });
