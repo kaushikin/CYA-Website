@@ -38,7 +38,7 @@ Please give **one clear portrait photo** for each active member (same style pref
 | File Name                    | Person                        | Role                  |
 |-----------------------------|-------------------------------|-----------------------|
 | `prafulla-jorapur.jpg`      | Prafulla Jorapur              | Founder President     |
-| `manoj-bn.jpg`              | Manoj B N                     | President             |
+| `manoj-bn.jpg`              | Manoj BP                     | President             |
 | `goutham-dn.jpg`            | Goutham D N                   | Secretary             |
 | `shobha-r.jpg`              | Shobha R                      | Active Member         |
 | `varun-m-deshpande.jpg`     | Varun M Deshpande             | Active Member         |

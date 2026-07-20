@@ -9,7 +9,7 @@
 | Name                    | Role                  | File name suggestion          |
 |-------------------------|-----------------------|-------------------------------|
 | Prafulla Jorapur        | Founder President     | prafulla-jorapur.jpg          |
-| Manoj B N               | President             | manoj-bn.jpg                  |
+| Manoj BP               | President             | manoj-bn.jpg                  |
 | Goutham D N             | Secretary             | goutham-dn.jpg                |
 
 ### Active Members (Updated)
@@ -79,7 +79,7 @@ Updated Team List for website:
 
 Core Team:
 • Prafulla Jorapur – Founder President
-• Manoj B N – President
+• Manoj BP – President
 • Goutham D N – Secretary
 
 Members to include:
