@@ -261,8 +261,11 @@
     .team-card:hover { transform: translateY(-4px); }
     .team-card.officer { border-color: rgba(26,107,181,.35); background: linear-gradient(180deg, #fff 0%, var(--blue-lt) 100%); }
     .team-card.officer .team-avatar { background: var(--blue); color: #fff; border-color: var(--blue); }
+    .team-card.officer .team-avatar.has-photo { background: #fff; }
     .team-card.officer .role-badge { display: inline-block; margin-top: 8px; font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--blue); background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 3px 10px; }
-    .team-avatar { width: 70px; height: 70px; border-radius: 50%; background: var(--blue-lt); margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-family: 'Poppins',sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--blue); border: 3px solid var(--border); }
+    .team-avatar { width: 88px; height: 88px; border-radius: 50%; background: var(--blue-lt); margin: 0 auto 14px; display: flex; align-items: center; justify-content: center; font-family: 'Poppins',sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--blue); border: 3px solid var(--border); overflow: hidden; flex-shrink: 0; }
+    .team-avatar.has-photo { padding: 0; background: #e8f0f8; }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
     .team-card h3 { font-family: 'Poppins',sans-serif; font-size: .92rem; font-weight: 700; color: var(--text-dk); }
     .team-card p { font-size: .78rem; color: var(--text-lt); margin-top: 4px; }
     .team-note { text-align: center; margin-top: 28px; padding: 14px 20px; background: #fff; border: 1.5px dashed var(--border); border-radius: 12px; font-size: .88rem; color: var(--text-md); max-width: 520px; margin-left: auto; margin-right: auto; }
@@ -849,35 +852,35 @@
       <p class="section-sub" style="margin:0 auto">Leadership and volunteers who keep our programmes running year after year.</p>
     </div>
     <div class="grid-5">
-      <div class="team-card officer"><div class="team-avatar">PJ</div><h3>Prafulla Jorapur</h3><p>Founder President</p><span class="role-badge">Leadership</span></div>
-      <div class="team-card officer"><div class="team-avatar">MB</div><h3>Manoj B N</h3><p>President</p><span class="role-badge">Leadership</span></div>
+      <div class="team-card officer"><div class="team-avatar has-photo"><img src="assets/team/prafulla-jorapur.jpg" alt="Prafulla Jorapur" loading="lazy"></div><h3>Prafulla Jorapur</h3><p>Founder President</p><span class="role-badge">Leadership</span></div>
+      <div class="team-card officer"><div class="team-avatar has-photo"><img src="assets/team/manoj-bn.jpg" alt="Manoj B N" loading="lazy"></div><h3>Manoj B N</h3><p>President</p><span class="role-badge">Leadership</span></div>
       <div class="team-card officer"><div class="team-avatar">GD</div><h3>Gautham D N</h3><p>Secretary</p><span class="role-badge">Leadership</span></div>
-      <div class="team-card"><div class="team-avatar">SR</div><h3>Shobha R</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/shobha-r.jpg" alt="Shobha R" loading="lazy"></div><h3>Shobha R</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">VD</div><h3>Varun M Deshpande</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">SV</div><h3>Shruthi Varun</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">ST</div><h3>Sasikala T</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">BM</div><h3>Bhargav M R</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">SG</div><h3>Srinidhi Gudi</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">LG</div><h3>Latha Gadakar</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">AD</div><h3>Aparna M Desai</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/srinidhi-gudi.jpg" alt="Srinidhi Gudi" loading="lazy"></div><h3>Srinidhi Gudi</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/latha-gadakar.jpg" alt="Latha Gadakar" loading="lazy"></div><h3>Latha Gadakar</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/aparna-desai.jpg" alt="Aparna M Desai" loading="lazy"></div><h3>Aparna M Desai</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">PD</div><h3>Padma Desai</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">PS</div><h3>Pavan Siraguppi</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">CK</div><h3>Chaitra Kulkarni</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">TR</div><h3>Tejaswini R</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">RG</div><h3>Rashmi Guruprasad</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/chaitra-kulkarni.jpg" alt="Chaitra Kulkarni" loading="lazy"></div><h3>Chaitra Kulkarni</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/tejaswini-r.jpg" alt="Tejaswini R" loading="lazy"></div><h3>Tejaswini R</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/rashmi-guruprasad.jpg" alt="Rashmi Guruprasad" loading="lazy"></div><h3>Rashmi Guruprasad</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">A</div><h3>Asha</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">RK</div><h3>Rukmini K</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/rukmini-k.jpg" alt="Rukmini K" loading="lazy"></div><h3>Rukmini K</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">N</div><h3>Nalini</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">S</div><h3>Srinivas</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">SD</div><h3>Shridevi</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/srinivas.jpg" alt="Srinivas" loading="lazy"></div><h3>Srinivas</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/shridevi.jpg" alt="Shridevi" loading="lazy"></div><h3>Shridevi</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">AN</div><h3>Annapurna</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">RH</div><h3>Roopa Halisagar</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">SP</div><h3>Suma Patil</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/roopa-halisagar.jpg" alt="Roopa Halisagar" loading="lazy"></div><h3>Roopa Halisagar</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/suma-patil.jpg" alt="Suma Patil" loading="lazy"></div><h3>Suma Patil</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">V</div><h3>Vivekananda</h3><p>Active Member</p></div>
-      <div class="team-card"><div class="team-avatar">KV</div><h3>Kubera Varma</h3><p>Active Member</p></div>
+      <div class="team-card"><div class="team-avatar has-photo"><img src="assets/team/kubera-varma.jpg" alt="Kubera Varma" loading="lazy"></div><h3>Kubera Varma</h3><p>Active Member</p></div>
       <div class="team-card"><div class="team-avatar">AS</div><h3>Abhiram Sinnurkar</h3><p>Active Member</p></div>
     </div>
-    <p class="team-note"><i class="fas fa-camera" style="color:var(--blue);margin-right:6px"></i> Member photographs will be added when available.</p>
+    <p class="team-note"><i class="fas fa-camera" style="color:var(--blue);margin-right:6px"></i> More member photographs will be added as they become available.</p>
     <p class="team-donors"><i class="fas fa-hand-holding-heart" style="color:var(--orange);margin-right:6px"></i> Major Donors: Sri C N Srinivasan &amp; Smt. Srinivasan</p>
   </div>
 </section>
